@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/161177572699684994/629a75f57ebf4008a2b3e9a028e5b2e9/artifacts
+end_time: 1681435405910
+entry_point_name: ''
+experiment_id: '161177572699684994'
+lifecycle_stage: active
+run_id: 629a75f57ebf4008a2b3e9a028e5b2e9
+run_name: sneaky-bear-703
+run_uuid: 629a75f57ebf4008a2b3e9a028e5b2e9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681435404871
+status: 3
+tags: []
+user_id: wsl

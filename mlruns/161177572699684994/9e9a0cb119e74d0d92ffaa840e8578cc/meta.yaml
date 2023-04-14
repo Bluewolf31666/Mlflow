@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/161177572699684994/9e9a0cb119e74d0d92ffaa840e8578cc/artifacts
+end_time: 1681435413675
+entry_point_name: ''
+experiment_id: '161177572699684994'
+lifecycle_stage: active
+run_id: 9e9a0cb119e74d0d92ffaa840e8578cc
+run_name: likeable-mouse-607
+run_uuid: 9e9a0cb119e74d0d92ffaa840e8578cc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681435412659
+status: 3
+tags: []
+user_id: wsl

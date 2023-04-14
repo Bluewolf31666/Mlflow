@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/161177572699684994/1a5b3ed3d838415197546274c74d3e30/artifacts
+end_time: 1681435407869
+entry_point_name: ''
+experiment_id: '161177572699684994'
+lifecycle_stage: active
+run_id: 1a5b3ed3d838415197546274c74d3e30
+run_name: enchanting-fawn-915
+run_uuid: 1a5b3ed3d838415197546274c74d3e30
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681435406812
+status: 3
+tags: []
+user_id: wsl

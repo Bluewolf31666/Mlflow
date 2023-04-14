@@ -1,0 +1,15 @@
+artifact_uri: file:///home/wsl/Mlflow/example_model/mlruns/0/1d1762d173ab4167a104c80cc75d3e82/artifacts
+end_time: 1681439761735
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1d1762d173ab4167a104c80cc75d3e82
+run_name: capricious-grub-709
+run_uuid: 1d1762d173ab4167a104c80cc75d3e82
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681439760737
+status: 3
+tags: []
+user_id: wsl

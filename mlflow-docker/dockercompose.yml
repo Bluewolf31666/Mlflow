@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  mlflow-docker:
+    container_name: mlflow-docker-store-local
+    image: mlflow-docker-store-local
+    restart: always
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "5050:5050"
+    volumes:  
+      - .:/app/mlflow-docker
+    entrypoint: mlflow server --backend-store-uri file:////app/mlflow-docker/my-store/mlruns -h 0.0.0.0 -p 5050

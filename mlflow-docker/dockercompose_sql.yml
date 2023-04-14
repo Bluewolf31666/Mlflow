@@ -1,0 +1,41 @@
+version: "3.9"
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    container_name: mlflow-db
+    expose:
+      - "3307"
+    environment:
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_TCP_PORT=3307
+    volumes:
+      - db_volume:/var/lib/mysql
+    networks:
+      - internal
+  mlflow:
+    container_name: mlflow-docker-store-mysql
+    image: mlflow-docker-store-mysql
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5050:5050"
+    environment:
+      - MLFLOW_TRACKING_URI=http://localhost:5050
+    volumes:
+      - .:/app/mlflow-docker
+    networks:
+      - internal
+    entrypoint: ["mlflow", "server"]
+    command: --backend-store-uri mysql+pymysql://${MYSQL_USER}:${MYSQL_PASSWORD}@db:3307/${MYSQL_DATABASE} -h 0.0.0.0 -p 5050
+  
+networks:
+  internal:
+
+volumes:
+  db_volume:
